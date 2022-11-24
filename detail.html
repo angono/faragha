@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Faragha - Detail page</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="grey lighten-2">
+  <nav class="white z-depth-0" role="navigation">
+    <div class="nav-wrapper container z-depth-0">
+      <a id="logo-container" href="index.html" class="brand-logo blue-text" style="font-size: 24px;">Faragha</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" class="blue-text"><i class="material-icons">notifications</i></a></li>
+        <li><a href="#" class="blue-text"><i class="material-icons">search</i></a></li>
+        <li><a href="#" class="blue-text"><i class="material-icons">account_circle</i></a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background red darken-4"></div>
+            
+            <a href="index.html"><img src="images/favicon.ico" class="circle"></a>
+            <a href="#"><span class="white-text name">Derkos Tirel</span></a>
+            <a href="#"><span class="white-text email">tirelangono@gmail.com</span></a>
+          </div>
+        </li>
+
+        <li><a href="index.html"><i class="material-icons">home</i>Homepage</a></li>
+        <li><a href="#"><i class="material-icons">list</i>Latest Posts</a></li>
+        <li><a href="#"><i class="material-icons">trending_up</i>Trending</a></li>
+        <li><a href="#"><i class="material-icons">category</i>Categories</a></li>
+        <div class="divider"></div>
+
+        <li><a href="#"><i class="material-icons">notifications</i>Notifications</a></li>
+        <li><a href="#"><i class="material-icons">account_circle</i>Profile</a></li>
+        <li><a href="notes.html"><i class="material-icons">note</i>Notes</a></li>
+        <div class="divider"></div>
+
+        <li><a href="#"><i class="material-icons">info</i>About</a></li>
+        <li><a href="#"><i class="material-icons">contacts</i>Contact</a></li>
+        <li><a href="#"><i class="material-icons">help</i>FAQs</a></li>
+        <div class="divider"></div>
+
+        <li><a href="#"><i class="material-icons">exit_to_app</i>Logout</a></li>
+        <li><a href="#"><i class="material-icons">login</i>Login</a></li>
+        <li><a href="#"><i class="material-icons">save</i>Register</a></li>
+      </ul>
+      <a href="index.html" data-target="nav-mobile" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
+  </nav>
+
+  <div class="section no-pad">
+    <div class="container">
+      <div class="row">
+
+        <div class="col s12 m8 l8 xl8">
+          <div class="card z-depth-0">
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="index.html" class="grey-text"><i class="material-icons">home</i>Homepage</a></li>
+                <li class="tab"><a href="#" class="blue-text"><i class="material-icons">edit</i>Edit Post</a></li>
+                <li class="tab"><a href="#" class="red-text"><i class="material-icons">delete</i>Delete Post</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card-panel z-depth-0">
+            <div class="collection">
+              <a href="#" class="collection-item avatar">
+                <img src="images/user.jpg" alt="" class="circle">
+                <span class="title blue-text">Derkos Tirel</span><br>
+                <span class="grey-text subheader">Jan 03, 2022 at 11:45 AM</span>
+              </a>
+            </div>
+            <div class="card-content">
+              <h5 class="card-title blue-text">Lorem ipsum dolor sit amet</h5>
+              <div href="detail.html" class="card-image">
+                <img class="responsive-img" src="images/2.jpg">
+              </div>
+              <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <div class="text-left">
+                <a href="#" class="btn-flat waves-effect waves-light grey-text"><i class="material-icons">favorite</i>29</a>
+                <a href="#" class="btn-flat waves-effect waves-light grey-text"><i class="material-icons">message</i>11</a>
+                <a href="#" class="btn-flat waves-effect waves-light grey-text"><i class="material-icons">share</i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-panel z-depth-0">
+            <!-- comment form begin -->
+            <div class="nav-wrapper">
+              <form method="POST" action=".">
+                <div class="input-field">
+                  <textarea rows="3"></textarea>
+                  <button class="btn waves-effect waves-light z-depth-0 blue" type="Submit" name="action">Comment</button>
+                </div>
+              </form>
+            </div>
+            <!-- comment form end -->
+
+            <ul class="collection with-header">
+              <li class="collection-item">
+                <a href="#" class="collection-item avatar">
+                  <img src="images/user.jpg" alt="" class="circle">
+                  <span class="title blue-text">Derkos Tirel</span><br>
+                  <span class="grey-text">Jan 03, 2022 at 11:45 AM</span>
+                </a>
+                <p class="light">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt ut labore et dolore magna aliqua.</p>
+                <div class="text-left">
+                  <a href="#" class="btn-flat waves-effect waves-light blue-text"><i class="material-icons">edit</i></a>
+                  <a href="#" class="btn-flat waves-effect waves-light red-text"><i class="material-icons">delete</i></a>
+                </div>
+              </li>
+              <li class="collection-item">
+                <a href="#" class="collection-item avatar">
+                  <img src="images/user.jpg" alt="" class="circle">
+                  <span class="title blue-text">Derkos Tirel</span><br>
+                  <span class="grey-text">Jan 03, 2022 at 11:45 AM</span>
+                </a>
+                <p class="light">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt ut labore et dolore magna aliqua.</p>
+                <div class="text-left">
+                  <a href="#" class="btn-flat waves-effect waves-light blue-text"><i class="material-icons">edit</i></a>
+                  <a href="#" class="btn-flat waves-effect waves-light red-text"><i class="material-icons">delete</i></a>
+                </div>
+              </li>
+              <li class="collection-item">
+                <a href="#" class="collection-item avatar">
+                  <img src="images/user.jpg" alt="" class="circle">
+                  <span class="title blue-text">Derkos Tirel</span><br>
+                  <span class="grey-text">Jan 03, 2022 at 11:45 AM</span>
+                </a>
+                <p class="light">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt ut labore et dolore magna aliqua.</p>
+                <div class="text-left">
+                  <a href="#" class="btn-flat waves-effect waves-light blue-text"><i class="material-icons">edit</i></a>
+                  <a href="#" class="btn-flat waves-effect waves-light red-text"><i class="material-icons">delete</i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col s12 m4 l4 xl4">
+          <div class="collection with-header white">
+            <h6 class="collection-header">Latest Posts</h6>
+            <a href="#" class="collection-item avatar">
+              <img src="images/user.jpg" alt="" class="circle">
+              <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
+              <span class="grey-text"><i class="material-icons">message</i>11</span>
+            </a>
+            <a href="#" class="collection-item avatar">
+              <img src="images/user.jpg" alt="" class="circle">
+              <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
+              <span class="grey-text"><i class="material-icons">message</i>11</span>
+            </a>
+            <a href="#" class="collection-item avatar">
+              <img src="images/user.jpg" alt="" class="circle">
+              <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
+              <span class="grey-text"><i class="material-icons">message</i>11</span>
+            </a>
+            <div class="collection-item">
+              <a href="#" class="btn waves-effect waves-light z-depth-0 blue" style="width: 100%;">View all</a>
+            </div>
+          </div>
+
+          <div class="collection with-header white">
+            <h6 class="collection-header">Trending</h6>
+            <a href="#" class="collection-item avatar">
+              <img src="images/user.jpg" alt="" class="circle">
+              <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
+              <span class="grey-text"><i class="material-icons">message</i>24</span>
+            </a>
+            <a href="#" class="collection-item avatar">
+              <img src="images/user.jpg" alt="" class="circle">
+              <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
+              <span class="grey-text"><i class="material-icons">message</i>24</span>
+            </a>
+            <a href="#" class="collection-item avatar">
+              <img src="images/user.jpg" alt="" class="circle">
+              <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
+              <span class="grey-text"><i class="material-icons">message</i>24</span>
+            </a>
+            <div class="collection-item">
+              <a href="#" class="btn waves-effect waves-light z-depth-0 blue" style="width: 100%;">View all</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m3 l4 xl4">
+          <h5 class="white-text">Quick Links</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Homepage</a></li>
+            <li><a class="white-text" href="#!">Latest Posts</a></li>
+            <li><a class="white-text" href="#!">Trending</a></li>
+            <li><a class="white-text" href="#!">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col s12 m3 l4 xl4">
+          <h5 class="white-text">Quick Links</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Contact</a></li>
+            <li><a class="white-text" href="#!">FAQs</a></li>
+            <li><a class="white-text" href="#!">Privacy</a></li>
+            <li><a class="white-text" href="#!">Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="col s12 m3 l4 xl4">
+          <h5 class="white-text">Social Media</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Email</a></li>
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <li><a class="white-text" href="#!">WhatsApp</a></li>
+            <li><a class="white-text" href="#!">Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">Made by <a class="brand-logo text-lighten-3" href="#">faragha</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+
+
+  <script type="text/javascript">
+    var elem = document.querySelector('.gallery');
+    var msnry = new Masonry( elem, {
+      // options
+      itemSelector: '.gallery-item',
+      columnWidth: '.gallery-item',
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var msnry = new Masonry( '.gallery', {
+      // options
+    });
+  </script>
+
+  </body>
+</html>
