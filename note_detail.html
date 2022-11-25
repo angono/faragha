@@ -60,132 +60,84 @@
 
   <div class="section no-pad">
     <div class="container">
-      <div class="row">
-
-        <div class="col s12 m8 l8 xl8">
+      <div class="row gallery" data-masonry='{"percentPosition": true, "itemSelector": ".gallery-item", "columnWidth": ".gallery-item"}'>
+        <div class="col s12 m6 l6 xl6 gallery-item">
           <div class="card z-depth-0">
             <div class="card-tabs">
               <ul class="tabs tabs-fixed-width">
-                <li class="tab"><a href="index.html" class="grey-text"><i class="material-icons">home</i>Homepage</a></li>
-                <li class="tab"><a href="#" class="grey-text"><i class="material-icons">list</i>Articles</a></li>
-                <li class="tab"><a href="#" class="grey-text"><i class="material-icons">note_add</i>Add Note</a></li>
+                <li class="tab"><a href="notes.html" class="grey-text"><i class="material-icons">note</i>Notes List</a></li>
+                <li class="tab"><a href="#" class="blue-text"><i class="material-icons">edit</i>Edit</a></li>
+                <li class="tab"><a href="#" class="red-text"><i class="material-icons">delete</i>Delete</a></li>
               </ul>
             </div>
           </div>
-
           <div class="card-panel z-depth-0">
-            <div class="card-action">
-              <span class="card-title blue-text">123 items</span>
+            <div class="card-content">
+              <h5 class="card-title blue-text">Period</h5>
+              <p class="card-title"><b class="red-text">Month: </b>January</p>
+              <p class="card-title"><b class="red-text">Day: </b>03</p>
+              <p class="card-title"><b class="red-text">Year: </b>2022</p>
             </div>
-            <div class="divider"></div>
-            <table class="responsive-table striped centered">
-              <thead>
-                <tr>
-                  <th>Events</th>
-                  <th>Months</th>
-                  <th>Days</th>
-                  <th>Years</th>
-                  <th>View</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Period</td>
-                  <td>January</td>
-                  <td>23</td>
-                  <td>2022</td>
-                  <td><a href="note_detail.html" class="btn-flat waves-effect waves-light blue-text">Details</a></td>
-                </tr>
-                <tr>
-                  <td>Period</td>
-                  <td>January</td>
-                  <td>23</td>
-                  <td>2022</td>
-                  <td><a href="note_detail.html" class="btn-flat waves-effect waves-light blue-text">Details</a></td>
-                </tr>
-                <tr>
-                  <td>Period</td>
-                  <td>January</td>
-                  <td>23</td>
-                  <td>2022</td>
-                  <td><a href="note_detail.html" class="btn-flat waves-effect waves-light blue-text">Details</a></td>
-                </tr>
-                <tr>
-                  <td>Period</td>
-                  <td>January</td>
-                  <td>23</td>
-                  <td>2022</td>
-                  <td><a href="note_detail.html" class="btn-flat waves-effect waves-light blue-text">Details</a></td>
-                </tr>
-                <tr>
-                  <td>Period</td>
-                  <td>January</td>
-                  <td>23</td>
-                  <td>2022</td>
-                  <td><a href="note_detail.html" class="btn-flat waves-effect waves-light blue-text">Details</a></td>
-                </tr>
-                <tr>
-                  <td>Period</td>
-                  <td>January</td>
-                  <td>23</td>
-                  <td>2022</td>
-                  <td><a href="note_detail.html" class="btn-flat waves-effect waves-light blue-text">Details</a></td>
-                </tr>
-              </tbody>
-            </table>
           </div>
-
         </div>
 
-        <div class="col s12 m4 l4 xl4">
+        <div class="col s12 m6 l6 xl6 gallery-item">
           <div class="card-panel z-depth-0">
-            <h5 class="card-title blue-text">My Notes Annual History</h5>
+            <div class="card-content">
+              <h5 class="card-title blue-text">More details</h5>
+              <div class="card-image">
+                <img class="responsive-img" src="static/images/period.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l6 xl6 gallery-item">
+          <div class="card-panel z-depth-0">
+            <h5 class="card-title blue-text">Learn more</h5>
             <div class="collection">
-              <a href="#" class="collection-item">
-                <span class="light blue-text">2022 data</span>
-                <span class="light grey-text">Availabe</span>
+              <a href="#" class="collection-item avatar">
+                <img src="static/images/user.jpg" alt="" class="circle">
+                <h5 class="title blue-text">Sunt in culpa qui</h5>
+                <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
+                <span class="red-text">Period</span>
               </a>
-              <a href="#" class="collection-item">
-                <span class="light blue-text">2021 data</span>
-                <span class="light grey-text">Availabe</span>
+              <a href="#" class="collection-item avatar">
+                <img src="static/images/user.jpg" alt="" class="circle">
+                <h5 class="title blue-text">Sunt in culpa qui</h5>
+                <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
+                <span class="red-text">Period</span>
               </a>
-              <a href="#" class="collection-item">
-                <span class="light blue-text">2020 data</span>
-                <span class="light grey-text">Availabe</span>
+              <a href="#" class="collection-item avatar">
+                <img src="static/images/user.jpg" alt="" class="circle">
+                <h5 class="title blue-text">Sunt in culpa qui</h5>
+                <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
+                <span class="red-text">Period</span>
               </a>
-              <a href="#" class="collection-item">
-                <span class="light blue-text">2019 data</span>
-                <span class="light grey-text">Availabe</span>
-              </a>
-              <a href="#" class="collection-item">
-                <span class="light blue-text">2018 data</span>
-                <span class="light grey-text">Availabe</span>
-              </a>
-              <a href="#" class="collection-item">
-                <span class="light blue-text">2017 data</span>
-                <span class="light grey-text">Availabe</span>
-              </a>
-              <a href="#" class="collection-item">
-                <span class="light blue-text">2016 data</span>
-                <span class="light grey-text">Availabe</span>
-              </a>
-              <a href="#" class="collection-item">
-                <span class="light blue-text">2015 data</span>
-                <span class="light grey-text">Availabe</span>
-              </a>
-              <a href="#" class="collection-item">
-                <span class="light blue-text">2014 data</span>
-                <span class="light grey-text">Availabe</span>
-              </a>
-              <a href="#" class="collection-item">
-                <span class="light blue-text">2013 data</span>
-                <span class="light grey-text">Availabe</span>
-              </a>
+              <div class="collection-item">
+                <a href="#" class="btn waves-effect waves-light z-depth-0 blue" style="width: 100%;">View all</a>
+              </div>
             </div>
           </div>
         </div>
 
+        <div class="col s12 m6 l6 xl6 gallery-item">
+          <div class="card-panel z-depth-0">
+            <div class="card-content">
+              <h5 class="card-title blue-text">Link me settings</h5>
+              <div class="nav-wrapper">
+                <form method="POST" action=".">
+                  <div class="input-field">
+                    <input type="text" name="linkme" placeholder="Add your linkme code here...">
+                    <button class="btn waves-effect waves-light z-depth-0 blue" type="Submit" name="action">Save it</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
