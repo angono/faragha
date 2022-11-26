@@ -13,7 +13,8 @@
 <body class="grey lighten-2">
   <nav class="white z-depth-0" role="navigation">
     <div class="nav-wrapper container z-depth-0">
-      <a id="logo-container" href="index.html" class="brand-logo blue-text" style="font-size: 24px;">Faragha</a>
+      <a id="logo-container" href="index.html" class="brand-logo blue-text"><img class="circle grey pad-top" src="static/images/favicon.ico" height="50" style="margin-top: 4px;"></a>
+
       <ul class="right hide-on-med-and-down">
         <li><a href="#" class="blue-text"><i class="material-icons">notifications</i></a></li>
         <li><a href="#" class="blue-text"><i class="material-icons">search</i></a></li>
@@ -34,7 +35,6 @@
 
         <li><a href="index.html"><i class="material-icons">home</i>Homepage</a></li>
         <li><a href="#"><i class="material-icons">list</i>Latest Posts</a></li>
-        <li><a href="#"><i class="material-icons">trending_up</i>Trending</a></li>
         <li><a href="#"><i class="material-icons">category</i>Categories</a></li>
         <div class="divider"></div>
 
@@ -60,8 +60,8 @@
 
   <div class="section no-pad">
     <div class="container">
-      <div class="row gallery" data-masonry='{"percentPosition": true, "itemSelector": ".gallery-item", "columnWidth": ".gallery-item"}'>
-        <div class="col s12 m6 l6 xl6 gallery-item">
+      <div class="row">
+        <div class="col s12 m6 l6 xl6">
           <div class="card z-depth-0">
             <div class="card-tabs">
               <ul class="tabs tabs-fixed-width">
@@ -77,67 +77,35 @@
               <p class="card-title"><b class="red-text">Month: </b>January</p>
               <p class="card-title"><b class="red-text">Day: </b>03</p>
               <p class="card-title"><b class="red-text">Year: </b>2022</p>
+              <div class="divider"></div>
+              <h5 class="card-title blue-text">Description</h5>
+              <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
           </div>
         </div>
 
-        <div class="col s12 m6 l6 xl6 gallery-item">
+        <div class="col s12 m6 l6 xl6">
           <div class="card-panel z-depth-0">
             <div class="card-content">
               <h5 class="card-title blue-text">More details</h5>
-              <div class="card-image">
-                <img class="responsive-img" src="static/images/period.PNG">
-              </div>
+              <canvas id="myChart"></canvas>
             </div>
           </div>
-        </div>
-
-        <div class="col s12 m6 l6 xl6 gallery-item">
           <div class="card-panel z-depth-0">
-            <h5 class="card-title blue-text">Learn more</h5>
             <div class="collection">
               <a href="#" class="collection-item avatar">
                 <img src="static/images/user.jpg" alt="" class="circle">
-                <h5 class="title blue-text">Sunt in culpa qui</h5>
-                <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
-                <span class="red-text">Period</span>
+                <span class="title blue-text">Derkos Tirel</span><br>
+                <span class="grey-text">derkos@gmail.com</span><br>
+                <span class="grey-text">+256700000</span>
               </a>
-              <a href="#" class="collection-item avatar">
-                <img src="static/images/user.jpg" alt="" class="circle">
-                <h5 class="title blue-text">Sunt in culpa qui</h5>
-                <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
-                <span class="red-text">Period</span>
-              </a>
-              <a href="#" class="collection-item avatar">
-                <img src="static/images/user.jpg" alt="" class="circle">
-                <h5 class="title blue-text">Sunt in culpa qui</h5>
-                <span class="light black-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><br>
-                <span class="red-text">Period</span>
-              </a>
-              <div class="collection-item">
-                <a href="#" class="btn waves-effect waves-light z-depth-0 blue" style="width: 100%;">View all</a>
-              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l6 xl6 gallery-item">
-          <div class="card-panel z-depth-0">
-            <div class="card-content">
-              <h5 class="card-title blue-text">Link me settings</h5>
-              <div class="nav-wrapper">
-                <form method="POST" action=".">
-                  <div class="input-field">
-                    <input type="text" name="linkme" placeholder="Add your linkme code here...">
-                    <button class="btn waves-effect waves-light z-depth-0 blue" type="Submit" name="action">Save it</button>
-                  </div>
-                </form>
-              </div>
+            <div class="text-left">
+              <a href="#" class="btn waves-effect waves-light z-depth-0 blue">Edit Profile</a>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -189,6 +157,31 @@
   <script src="static/js/init.js"></script>
   <script src="static/js/masonry.pkgd.min.js"></script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri'],
+      datasets: [{
+        label: '# of Votes',
+        data: [7, 4, 6, 8, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
 
   <script type="text/javascript">
     var elem = document.querySelector('.gallery');
